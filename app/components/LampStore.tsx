@@ -2,12 +2,12 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-import DiningRoom from "../rooms/DiningRoom"
-import Bedroom from "../rooms/Bedroom"
-import LivingRoom from "../rooms/LivingRoom"
-import Study from "../rooms/Study"
-import Kitchen from "../rooms/Kitchen"
-import Storage from "../rooms/Storage"
+import DiningRoom from "./rooms/DiningRoom"
+import Bedroom from "./rooms/Bedroom"
+import LivingRoom from "./rooms/LivingRoom"
+import Study from "./rooms/Study"
+import Kitchen from "./rooms/Kitchen"
+import Storage from "./rooms/Storage"
 
 
 export default function LampStore() {
