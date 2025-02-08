@@ -40,12 +40,12 @@ export function useRatings() {
     loadRatings()
   }, [])
 
-  const updateRating = async (lampId: string, rating: number) => {
+  const updateRating = async (title: string, rating: number) => {
     try {
       // Optimistically update UI and localStorage
       const newRatings = {
         ...ratings,
-        [lampId]: rating
+        [title]: rating
       }
       setRatings(newRatings)
       localStorage.setItem(RATINGS_STORAGE_KEY, JSON.stringify(newRatings))
@@ -56,7 +56,7 @@ export function useRatings() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ lampId, rating }),
+        body: JSON.stringify({ title, rating }),
       })
 
       if (!response.ok) {

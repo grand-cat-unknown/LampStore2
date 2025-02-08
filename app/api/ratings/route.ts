@@ -19,7 +19,7 @@ export async function GET() {
     // Convert Supabase rows into the shape { ratingKey: ratingValue }
     const ratings: Record<string, number> = {};
     data?.forEach((row) => {
-      ratings[row.lampId] = row.rating;
+      ratings[row.title] = row.rating;
     });
 
     return NextResponse.json({ ratings });
@@ -35,10 +35,10 @@ export async function GET() {
 // POST /api/ratings
 export async function POST(request: Request) {
   try {
-    const { lampId, rating } = await request.json();
-    if (!lampId) {
+    const { title, rating } = await request.json();
+    if (!title) {
       return NextResponse.json(
-        { error: "lampId is required" },
+        { error: "title is required" },
         { status: 400 }
       );
     }
@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     // Upsert (insert or update) rating in Supabase "ratings" table
     const { error } = await supabase
       .from("ratings")
-      .upsert({ lampId, rating });
+      .upsert({ title, rating });
 
     if (error) {
       console.error("POST ratings error:", error);
@@ -71,7 +71,7 @@ export async function POST(request: Request) {
     // Convert rows into { ratingKey: ratingValue }
     const updatedRatings: Record<string, number> = {};
     data?.forEach((row) => {
-      updatedRatings[row.lampId] = row.rating;
+      updatedRatings[row.title] = row.rating;
     });
 
     return NextResponse.json({
