@@ -38,9 +38,6 @@ export default function LampStore() {
       <TabsContent value="bedroom">
         <Bedroom />
       </TabsContent>
-      <TabsContent value="dining-room">
-        <DiningRoom />
-      </TabsContent>
       <TabsContent value="study">
         <Study />
       </TabsContent>
