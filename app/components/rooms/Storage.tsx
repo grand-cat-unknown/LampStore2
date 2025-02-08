@@ -12,9 +12,7 @@ const storageLamps = [
 export default function Storage() {
   return (
     <div className="grid grid-cols-1 gap-6 mt-6">
-      {storageLamps.map((lamp) => (
-        <LampCard key={lamp.showroomId} {...lamp} />
-      ))}
+      <p>Storage Lamps Coming Soon</p>
     </div>
   )
 } 
