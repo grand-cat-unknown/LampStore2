@@ -35,7 +35,7 @@ const toiletLamps = [
 
 export default function Toilet() {
   return (
-    <div className="room toilet">
+    <div className="rooms-container">
       <h2>Toilet</h2>
       <div className="grid grid-cols-1 gap-6 mt-6">
         {toiletLamps.map((lamp) => (

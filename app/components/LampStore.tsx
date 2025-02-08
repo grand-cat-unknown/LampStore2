@@ -7,6 +7,7 @@ import LivingRoom from "./rooms/LivingRoom"
 import Study from "./rooms/Study"
 import Kitchen from "./rooms/Kitchen"
 import Storage from "./rooms/Storage"
+import Toilet from "./rooms/Toilet"
 
 
 export default function LampStore() {
@@ -28,6 +29,9 @@ export default function LampStore() {
         <TabsTrigger value="storage" className="py-3 text-sm sm:text-base">
           Storage
         </TabsTrigger>
+        <TabsTrigger value="toilet" className="py-3 text-sm sm:text-base">
+          Toilet
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="living-room">
         <LivingRoom />
@@ -43,6 +47,9 @@ export default function LampStore() {
       </TabsContent>
       <TabsContent value="storage">
         <Storage />
+      </TabsContent>
+      <TabsContent value="toilet">
+        <Toilet />
       </TabsContent>
     </Tabs>
   )
