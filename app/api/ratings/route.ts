@@ -3,20 +3,14 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 // Store the ratings file in the app directory instead of public
-const ratingsPath = path.join(process.cwd(), 'data', 'lamp_ratings.json')
+const ratingsPath = path.join(process.cwd(), 'public', 'lamp_ratings.json')
 
 // Ensure the data directory and file exist
 async function ensureRatingsFile() {
   try {
-    const dir = path.dirname(ratingsPath)
-    await fs.mkdir(dir, { recursive: true })
-    try {
-      await fs.access(ratingsPath)
-    } catch {
-      await fs.writeFile(ratingsPath, JSON.stringify({ ratings: {} }, null, 2))
-    }
-  } catch (error: any) {
-    console.error('Failed to ensure ratings file:', error)
+    await fs.access(ratingsPath)
+  } catch {
+    await fs.writeFile(ratingsPath, JSON.stringify({ ratings: {} }, null, 2))
   }
 }
 
