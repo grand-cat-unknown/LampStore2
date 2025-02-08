@@ -1,6 +1,15 @@
+import React from 'react'
 import LampCard from "../LampCard"
 
-const tableLamps = [
+// Define the type for a lamp item
+interface LampItem {
+  title: string
+  imageUrl: string
+  showroomId: string
+  price: number
+}
+
+const tableLamps: LampItem[] = [
   {
     title: "Spot 72531",
     imageUrl: "https://www.rietveldlicht.nl/fotos/groot/72531.jpg",
@@ -21,7 +30,7 @@ const tableLamps = [
   },
 ]
 
-const standingLamps = [
+const standingLamps: LampItem[] = [
   {
     title: "Staande lamp 74249",
     imageUrl: "https://www.rietveldlicht.nl/fotos/groot/74249.jpg",
@@ -48,7 +57,7 @@ const standingLamps = [
   },
 ]
 
-const couchLamps = [
+const couchLamps: LampItem[] = [
   {
     title: "Hanglamp 74039",
     imageUrl: "https://www.rietveldlicht.nl/fotos/groot/74039.jpg",
@@ -63,14 +72,20 @@ const couchLamps = [
   },
 ]
 
-export default function LivingRoom() {
+export default function LivingRoom(): JSX.Element {
   return (
     <div className="space-y-12">
       <section>
         <h3 className="text-xl font-semibold mb-4">Above Table</h3>
         <div className="grid grid-cols-1 gap-6">
           {tableLamps.map((lamp) => (
-            <LampCard key={lamp.showroomId} {...lamp} />
+            <LampCard 
+              key={lamp.showroomId}
+              title={lamp.title}
+              imageUrl={lamp.imageUrl}
+              showroomId={lamp.showroomId}
+              price={lamp.price}
+            />
           ))}
         </div>
       </section>
@@ -79,7 +94,13 @@ export default function LivingRoom() {
         <h3 className="text-xl font-semibold mb-4">Standing Lamps</h3>
         <div className="grid grid-cols-1 gap-6">
           {standingLamps.map((lamp) => (
-            <LampCard key={lamp.showroomId} {...lamp} />
+            <LampCard 
+              key={lamp.showroomId}
+              title={lamp.title}
+              imageUrl={lamp.imageUrl}
+              showroomId={lamp.showroomId}
+              price={lamp.price}
+            />
           ))}
         </div>
       </section>
@@ -88,7 +109,13 @@ export default function LivingRoom() {
         <h3 className="text-xl font-semibold mb-4">Above Couch</h3>
         <div className="grid grid-cols-1 gap-6">
           {couchLamps.map((lamp) => (
-            <LampCard key={lamp.showroomId} {...lamp} />
+            <LampCard 
+              key={lamp.showroomId}
+              title={lamp.title}
+              imageUrl={lamp.imageUrl}
+              showroomId={lamp.showroomId}
+              price={lamp.price}
+            />
           ))}
         </div>
       </section>
