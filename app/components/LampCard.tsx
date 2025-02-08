@@ -14,6 +14,7 @@ interface LampCardProps {
 }
 
 export default function LampCard({ 
+  title,
   imageUrl, 
   showroomId, 
   dimensions, 
@@ -33,7 +34,7 @@ export default function LampCard({
       <div className="relative aspect-square">
         <Image
           src={imageUrl || "/placeholder.svg"}
-          alt={`Lamp ${showroomId}`}
+          alt={title || `Lamp ${showroomId}`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover"
@@ -41,7 +42,8 @@ export default function LampCard({
         />
       </div>
       <CardContent className="p-4">
-        <p className="font-semibold text-lg">Showroom ID: {showroomId}</p>
+        <p className="font-semibold text-lg">{title}</p>
+        {showroomId && <p className="text-sm text-gray-500">Showroom ID: {showroomId}</p>}
         <p className="text-base text-gray-600">Dimensions: {dimensions}</p>
         <p className="text-xl font-bold mt-2">${price.toFixed(2)}</p>
         <div className="flex items-center mt-2">
