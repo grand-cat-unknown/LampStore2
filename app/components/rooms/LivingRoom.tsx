@@ -1,5 +1,6 @@
 import React from 'react'
 import LampCard from "../LampCard"
+import { useRatings } from "@/app/hooks/useRatings"
 
 // Define the type for a lamp item
 interface LampItem {
@@ -73,6 +74,8 @@ const couchLamps: LampItem[] = [
 ]
 
 export default function LivingRoom(): JSX.Element {
+  const { ratings, updateRating } = useRatings()
+
   return (
     <div className="space-y-12">
       <section>
@@ -80,41 +83,47 @@ export default function LivingRoom(): JSX.Element {
         <div className="grid grid-cols-1 gap-6">
           {tableLamps.map((lamp) => (
             <LampCard 
-              key={lamp.showroomId}
+              key={lamp.title}
               title={lamp.title}
               imageUrl={lamp.imageUrl}
               showroomId={lamp.showroomId}
               price={lamp.price}
+              initialRating={ratings[lamp.title] || 0}
+              onRatingChange={(rating) => updateRating(lamp.title, rating)}
             />
           ))}
         </div>
       </section>
-      
+
       <section>
         <h3 className="text-xl font-semibold mb-4">Standing Lamps</h3>
         <div className="grid grid-cols-1 gap-6">
           {standingLamps.map((lamp) => (
             <LampCard 
-              key={lamp.showroomId}
+              key={lamp.title}
               title={lamp.title}
               imageUrl={lamp.imageUrl}
               showroomId={lamp.showroomId}
               price={lamp.price}
+              initialRating={ratings[lamp.title] || 0}
+              onRatingChange={(rating) => updateRating(lamp.title, rating)}
             />
           ))}
         </div>
       </section>
-      
+
       <section>
         <h3 className="text-xl font-semibold mb-4">Above Couch</h3>
         <div className="grid grid-cols-1 gap-6">
           {couchLamps.map((lamp) => (
             <LampCard 
-              key={lamp.showroomId}
+              key={lamp.title}
               title={lamp.title}
               imageUrl={lamp.imageUrl}
               showroomId={lamp.showroomId}
               price={lamp.price}
+              initialRating={ratings[lamp.title] || 0}
+              onRatingChange={(rating) => updateRating(lamp.title, rating)}
             />
           ))}
         </div>

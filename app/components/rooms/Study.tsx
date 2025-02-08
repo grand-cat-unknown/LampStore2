@@ -1,4 +1,5 @@
 import LampCard from "../LampCard"
+import { useRatings } from "@/app/hooks/useRatings"
 
 const studyLamps = [
   {
@@ -52,15 +53,19 @@ const studyLamps = [
 ]
 
 export default function Study() {
+  const { ratings, updateRating } = useRatings()
+
   return (
     <div className="grid grid-cols-1 gap-6 mt-6">
       {studyLamps.map((lamp) => (
         <LampCard 
-          key={lamp.showroomId}
+          key={lamp.title}
           title={lamp.title}
           imageUrl={lamp.imageUrl}
           showroomId={lamp.showroomId}
           price={lamp.price}
+          initialRating={ratings[lamp.title] || 0}
+          onRatingChange={(rating) => updateRating(lamp.title, rating)}
         />
       ))}
     </div>

@@ -1,4 +1,5 @@
 import LampCard from "../LampCard"
+import { useRatings } from "@/app/hooks/useRatings"
 
 const toiletLamps = [
   {
@@ -34,12 +35,19 @@ const toiletLamps = [
 ]
 
 export default function Toilet() {
+  const { ratings, updateRating } = useRatings()
+
   return (
     <div className="rooms-container">
       <h2>Toilet</h2>
       <div className="grid grid-cols-1 gap-6 mt-6">
         {toiletLamps.map((lamp) => (
-          <LampCard key={lamp.showroomId} {...lamp} />
+          <LampCard
+            key={lamp.title}
+            {...lamp}
+            initialRating={ratings[lamp.title] || 0}
+            onRatingChange={(rating) => updateRating(lamp.title, rating)}
+          />
         ))}
       </div>
     </div>
