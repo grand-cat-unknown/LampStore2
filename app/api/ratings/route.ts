@@ -1,49 +1,37 @@
 import { NextResponse } from 'next/server'
-import { promises as fs } from 'fs'
+import { JSONFileSync, LowSync } from 'lowdb'
 import path from 'path'
 
-// Store the ratings file in the app directory instead of public
-const ratingsPath = path.join(process.cwd(), 'public', 'lamp_ratings.json')
+// This is only an example for local dev. In production hosting on serverless (Vercel),
+// you need a real DB or external store for persistence.
 
-// Ensure the data directory and file exist
-async function ensureRatingsFile() {
-  try {
-    await fs.access(ratingsPath)
-  } catch {
-    await fs.writeFile(ratingsPath, JSON.stringify({ ratings: {} }, null, 2))
-  }
-}
+const file = path.join(process.cwd(), 'data.json') // you can pick a different file path
+const adapter = new JSONFileSync<{ ratings: Record<string, number> }>(file)
+const db = new LowSync(adapter)
+// Initialize
+db.read()
+db.data ||= { ratings: {} }
 
-// GET /api/ratings
 export async function GET() {
-  try {
-    await ensureRatingsFile()
-    const ratingsData = await fs.readFile(ratingsPath, 'utf-8')
-    return NextResponse.json(JSON.parse(ratingsData))
-  } catch (error: any) {
-    console.error('GET ratings error:', error)
-    return NextResponse.json({ error: 'Failed to fetch ratings', details: error.message }, { status: 500 })
-  }
+  // In local dev, this will read from data.json.
+  // On serverless, data.json is ephemeral.
+  db.read()
+  return NextResponse.json({ ratings: db.data.ratings })
 }
 
-// POST /api/ratings
 export async function POST(request: Request) {
   try {
-    await ensureRatingsFile()
     const { lampId, rating } = await request.json()
     
     if (!lampId) {
       return NextResponse.json({ error: 'lampId is required' }, { status: 400 })
     }
     
-    const ratingsData = await fs.readFile(ratingsPath, 'utf-8')
-    const data = JSON.parse(ratingsData)
+    db.read()
+    db.data.ratings[lampId] = rating
+    db.write()
     
-    data.ratings[lampId] = rating
-    
-    await fs.writeFile(ratingsPath, JSON.stringify(data, null, 2))
-    
-    return NextResponse.json({ success: true, ratings: data.ratings })
+    return NextResponse.json({ success: true, ratings: db.data.ratings })
   } catch (error: any) {
     console.error('POST ratings error:', error)
     return NextResponse.json({ error: 'Failed to update rating', details: error.message }, { status: 500 })
