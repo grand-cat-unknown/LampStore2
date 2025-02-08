@@ -1,0 +1,280 @@
+
+==================================================
+Room: Bedroom Ceiling
+==================================================
+
+Title: Hanglamp 15614
+Price: € 229,00
+Showroom: 0.13
+Main Image: https://www.rietveldlicht.nl/fotos/groot/15614.jpg
+--------------------------------------------------
+
+Title: Hanglamp 13472
+Price: € 159,00
+Showroom: 1.21
+Main Image: https://www.rietveldlicht.nl/fotos/groot/13472.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 15382
+Price: € 119,00
+Showroom: 1.08
+Main Image: https://www.rietveldlicht.nl/fotos/groot/15382.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 74013
+Price: € 139,00
+Showroom: 2.18
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74013.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 11507
+Price: € 159,00
+Showroom: 0.22
+Main Image: https://www.rietveldlicht.nl/fotos/groot/11507.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 30918
+Price: € 89,80
+Showroom: None
+Main Image: https://www.rietveldlicht.nl/fotos/groot/30918.jpg
+--------------------------------------------------
+
+Title: Hanglamp 75002
+Price: € 299,00
+Showroom: 0.09
+Main Image: https://www.rietveldlicht.nl/fotos/groot/75002.jpg
+--------------------------------------------------
+
+Title: Hanglamp 73827
+Price: € 99,90
+Showroom: 2.24
+Main Image: https://www.rietveldlicht.nl/fotos/groot/73827.jpg
+--------------------------------------------------
+
+Title: Hanglamp 13471
+Price: € 259,00
+Showroom: 1.21
+Main Image: https://www.rietveldlicht.nl/fotos/groot/13471.jpg
+--------------------------------------------------
+
+Title: Hanglamp 31301
+Price: € 114,40
+Showroom: None
+Main Image: https://www.rietveldlicht.nl/fotos/groot/31301.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: Study
+==================================================
+
+Title: Hanglamp 13671
+Price: € 179,00
+Showroom: 2.27
+Main Image: https://www.rietveldlicht.nl/fotos/groot/13671.jpg
+--------------------------------------------------
+
+Title: Hanglamp 70598
+Price: € 179,00
+Showroom: 1.09
+Main Image: https://www.rietveldlicht.nl/fotos/groot/70598.jpg
+--------------------------------------------------
+
+Title: Hanglamp 31499
+Price: € 104,40
+Showroom: 2.05
+Main Image: https://www.rietveldlicht.nl/fotos/groot/31499.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 74228
+Price: € 109,00
+Showroom: 1.42 / 2.27
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74228.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 74605
+Price: € 149,00
+Showroom: 1.37
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74605.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 13589
+Price: € 185,00
+Showroom: 1.43
+Main Image: https://www.rietveldlicht.nl/fotos/groot/13589.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 73559
+Price: € 119,00
+Showroom: 1.42
+Main Image: https://www.rietveldlicht.nl/fotos/groot/73559.jpg
+--------------------------------------------------
+
+Title: Plafondlamp 14260
+Price: € 225,00
+Showroom: 1.43
+Main Image: https://www.rietveldlicht.nl/fotos/groot/14260.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: Toilet
+==================================================
+
+Title: Wandlamp 74532
+Price: € 99,90
+Showroom: 1.29
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74532.jpg
+--------------------------------------------------
+
+Title: Spot 73235
+Price: € 69,90
+Showroom: 0.48
+Main Image: https://www.rietveldlicht.nl/fotos/groot/73235.jpg
+--------------------------------------------------
+
+Title: Wandlamp 74698
+Price: € 59,90
+Showroom: 1.45
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74698.jpg
+--------------------------------------------------
+
+Title: Wandlamp 74633
+Price: € 79,90
+Showroom: 1.35
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74633.jpg
+--------------------------------------------------
+
+Title: Wandlamp 74951
+Price: € 59,90
+Showroom: 2.76
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74951.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: Kitchen
+==================================================
+
+Title: Hanglamp 74368
+Price: € 199,00
+Showroom: 0.16
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74368.jpg
+--------------------------------------------------
+
+Title: Hanglamp 73604
+Price: € 299,00
+Showroom: None
+Main Image: https://www.rietveldlicht.nl/fotos/groot/73604.jpg
+--------------------------------------------------
+
+Title: Hanglamp 73957
+Price: € 399,00
+Showroom: 2.14
+Main Image: https://www.rietveldlicht.nl/fotos/groot/73957.jpg
+--------------------------------------------------
+
+Title: Hanglamp 15248
+Price: € 399,00
+Showroom: 0.45
+Main Image: https://www.rietveldlicht.nl/fotos/groot/15248.jpg
+--------------------------------------------------
+
+Title: Hanglamp 14332
+Price: € 359,00
+Showroom: 0.02
+Main Image: https://www.rietveldlicht.nl/fotos/groot/14332.jpg
+--------------------------------------------------
+
+Title: Hanglamp 74544
+Price: € 399,00
+Showroom: 0.34A
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74544.jpg
+--------------------------------------------------
+
+Title: Hanglamp 13648
+Price: € 299,00
+Showroom: 1.13
+Main Image: https://www.rietveldlicht.nl/fotos/groot/13648.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: LIVING ROOM ABOVE TABLE
+==================================================
+
+Title: Spot 72531
+Price: € 79,90
+Showroom: 0.57 / 1.46
+Main Image: https://www.rietveldlicht.nl/fotos/groot/72531.jpg
+--------------------------------------------------
+
+Title: Railspots 74942
+Price: € 139,00
+Showroom: 0.56
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74942.jpg
+--------------------------------------------------
+
+Title: Spot 74355
+Price: € 99,90
+Showroom: 0.49
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74355.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: STANDING LAMP LIVING ROOM
+==================================================
+
+Title: Staande lamp 74249
+Price: € 169,00
+Showroom: 1.11 / 2.14
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74249.jpg
+--------------------------------------------------
+
+Title: Staande lamp 14292
+Price: € 219,00
+Showroom: 0.06
+Main Image: https://www.rietveldlicht.nl/fotos/groot/14292.jpg
+--------------------------------------------------
+
+Title: Staande lamp 74035
+Price: € 129,90
+Showroom: 0.19 / 2.18
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74035.jpg
+--------------------------------------------------
+
+Title: Staande lamp 31083
+Price: € 175,90
+Showroom: 0.37
+Main Image: https://www.rietveldlicht.nl/fotos/groot/31083.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: ABOVE COUCH LIVING ROOM
+==================================================
+
+Title: Hanglamp 74039
+Price: € 279,00
+Showroom: 2.18
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74039.jpg
+--------------------------------------------------
+
+Title: Hanglamp 73958
+Price: € 349,00
+Showroom: 2.14
+Main Image: https://www.rietveldlicht.nl/fotos/groot/73958.jpg
+--------------------------------------------------
+
+
+==================================================
+Room: BERGING
+==================================================
+
+Title: Wandlamp 74403
+Price: € 79,90
+Showroom: 1.48
+Main Image: https://www.rietveldlicht.nl/fotos/groot/74403.jpg
+--------------------------------------------------
+

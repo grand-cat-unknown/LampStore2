@@ -2,9 +2,9 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 
 interface LampCardProps {
+  title: string
   imageUrl: string
   showroomId: string
-  dimensions: string
   price: number
 }
 

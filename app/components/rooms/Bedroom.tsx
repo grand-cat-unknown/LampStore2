@@ -2,24 +2,63 @@ import LampCard from "../LampCard"
 
 const bedroomLamps = [
   {
-    imageUrl: "/placeholder.svg?height=800&width=800",
-    showroomId: "BR001",
-    dimensions: '12" x 12" x 36"',
-    price: 129.99,
+    title: "Hanglamp 15614",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/15614.jpg",
+    showroomId: "0.13",
+    price: 229.00,
   },
   {
-    imageUrl: "/placeholder.svg?height=800&width=800",
-    showroomId: "BR002",
-    dimensions: '14" x 14" x 42"',
-    price: 159.99,
+    title: "Hanglamp 13472",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/13472.jpg",
+    showroomId: "1.21",
+    price: 159.00,
   },
   {
-    imageUrl: "/placeholder.svg?height=800&width=800",
-    showroomId: "BR003",
-    dimensions: '10" x 10" x 30"',
-    price: 99.99,
+    title: "Plafondlamp 15382",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/15382.jpg",
+    showroomId: "1.08",
+    price: 119.00,
   },
-  // Add more lamps as needed
+  {
+    title: "Plafondlamp 74013",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/74013.jpg",
+    showroomId: "2.18",
+    price: 139.00,
+  },
+  {
+    title: "Plafondlamp 11507",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/11507.jpg",
+    showroomId: "0.22",
+    price: 159.00,
+  },
+  {
+    title: "Plafondlamp 30918",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/30918.jpg",
+    price: 89.80,
+  },
+  {
+    title: "Hanglamp 75002",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/75002.jpg",
+    showroomId: "0.09",
+    price: 299.00,
+  },
+  {
+    title: "Hanglamp 73827",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/73827.jpg",
+    showroomId: "2.24",
+    price: 99.90,
+  },
+  {
+    title: "Hanglamp 13471",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/13471.jpg",
+    showroomId: "1.21",
+    price: 259.00,
+  },
+  {
+    title: "Hanglamp 31301",
+    imageUrl: "https://www.rietveldlicht.nl/fotos/groot/31301.jpg",
+    price: 114.40,
+  },
 ]
 
 export default function Bedroom() {
