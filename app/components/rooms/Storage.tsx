@@ -12,7 +12,15 @@ const storageLamps = [
 export default function Storage() {
   return (
     <div className="grid grid-cols-1 gap-6 mt-6">
-      <p>Storage Lamps Coming Soon</p>
+      {storageLamps.map((lamp) => (
+        <LampCard 
+          key={lamp.showroomId}
+          title={lamp.title}
+          imageUrl={lamp.imageUrl}
+          showroomId={lamp.showroomId}
+          price={lamp.price}
+        />
+      ))}
     </div>
   )
 } 

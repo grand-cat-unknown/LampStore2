@@ -19,9 +19,6 @@ export default function LampStore() {
         <TabsTrigger value="bedroom" className="py-3 text-sm sm:text-base">
           Bedroom
         </TabsTrigger>
-        <TabsTrigger value="dining-room" className="py-3 text-sm sm:text-base">
-          Dining Room
-        </TabsTrigger>
         <TabsTrigger value="study" className="py-3 text-sm sm:text-base">
           Study
         </TabsTrigger>
