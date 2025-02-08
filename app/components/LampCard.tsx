@@ -1,14 +1,33 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
+import { Star } from "lucide-react"
 
 interface LampCardProps {
   title: string
   imageUrl: string
-  showroomId: string
+  showroomId?: string
   price: number
+  dimensions?: string
+  initialRating?: number
+  onRatingChange?: (rating: number) => void
 }
 
-export default function LampCard({ imageUrl, showroomId, dimensions, price }: LampCardProps) {
+export default function LampCard({ 
+  imageUrl, 
+  showroomId, 
+  dimensions, 
+  price, 
+  initialRating = 0,
+  onRatingChange 
+}: LampCardProps) {
+  const [rating, setRating] = useState(initialRating);
+
+  const handleRatingClick = (newRating: number) => {
+    setRating(newRating);
+    onRatingChange?.(newRating);
+  };
+
   return (
     <Card className="overflow-hidden">
       <div className="relative aspect-square">
@@ -25,6 +44,17 @@ export default function LampCard({ imageUrl, showroomId, dimensions, price }: La
         <p className="font-semibold text-lg">Showroom ID: {showroomId}</p>
         <p className="text-base text-gray-600">Dimensions: {dimensions}</p>
         <p className="text-xl font-bold mt-2">${price.toFixed(2)}</p>
+        <div className="flex items-center mt-2">
+          {[1, 2, 3, 4, 5].map((star) => (
+            <Star
+              key={star}
+              className={`w-5 h-5 cursor-pointer ${
+                star <= rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+              }`}
+              onClick={() => handleRatingClick(star)}
+            />
+          ))}
+        </div>
       </CardContent>
     </Card>
   )
